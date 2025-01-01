@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  padding: 48px 0px 0px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--Tertiary_2, #E9EAEC);
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; 
+  position: relative;
+  max-width: 100%;
+}
+
+
+/* Capa 1 - Fondo más profundo */
+.parallax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/Fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  transform: translateZ(-px) scale(3);
+  z-index: -3;
+}
+
+
+/* Contenedor principal */
+.main-container {
+  transform-style: preserve-3d;
+}
+
+
+a {
+  text-decoration: none;
+}
+h4{
+  text-align: center;
+/* H4 - 30 Open_Semibold */
+font-family: "Open Sans";
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -1.2px;
+}
+
