@@ -52,6 +52,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 1140px;
   height: 114px;
   gap: 120px;
   border-radius: 8px;
@@ -147,6 +148,7 @@
 /* ------------------------Main content ------------------------ */
 .main-container {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,6 +163,7 @@
   gap: 68px;
   padding: 50px;
   width: 100%;
+  max-width: 1140px;
   height: auto;
 }
 
@@ -188,8 +191,8 @@
 .services {
   display: flex;
   width: 100%;
-  flex-direction: column;
   max-width: 1140px;
+  flex-direction: column;
   align-items: center;
   gap: 48px;
   /* background: var(--Primario, #2C2D31); */
@@ -206,6 +209,7 @@
 .our-services-container-2 {
   display: flex;
   width: 100%;
+  max-width: 1140px;
   align-items: flex-start;
   gap: 24px;
 }
@@ -270,6 +274,7 @@
 .stats {
   display: flex;
   width: 100%;
+  max-width: 1140px;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
@@ -1481,6 +1486,7 @@
   .content-stats {
     display: flex;
     flex-direction: column;
+    width: 90%;
     gap: 24px;
   }
 
@@ -1686,7 +1692,6 @@
     align-items: center;
     gap: 48px;
     width: 100%;
-    display: none;
   }
 
   .work-content {
@@ -1697,9 +1702,10 @@
   }
 
   .how-work {
-    width: 428px;
+    width: 90%;
     height: auto;
     align-items: center;
+    gap: 24px;
   }
   .work-description{
     width: 90%;
@@ -1713,12 +1719,14 @@
   }
   .work-subtitle {
     text-align: center;
+    width: 90%;
   }
   /*-------------------- Sección Different-------------------- */
   .difference-section {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1726,20 +1734,18 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 428px;
+    width: 90%;
   }
-
+  .manager-features{
+    width: 90%;
+  }
   .manager-content {
-    width: 428px;
+    width: 90%;
     height: auto;
     align-items: center;
-    padding-left: 10px;
   }
 
   .difference-illustration {
-    display: none;
-  }
-  .rol-section{
     display: none;
   }
 
@@ -1747,6 +1753,7 @@
   .clients-section {
     width: 387px;
     margin: 0 auto;
+    display: none;
   }
   .logos-clients {
     display: flex;
@@ -1778,7 +1785,24 @@
     width: 100%;
   }
   /*-------------- novedades y webinar------------------- */
+  .webinar-card, .news-card{
+    width: 90%;
+    margin: 0 auto;
+  }
 
+  .news-date, .webinar-date{
+    width: 90%;
+  }
+  .news-section, .webinars-section{
+    width: 100%;
+  }
+  .webinars-container, .news-container{
+    width: 90%;
+  }
+  .webinar-title, .news-title{
+    width: 90%;
+    padding: 0;
+  }
   .news-carousel-controls,
   .webinar-carousel-controls {
     display: flex;
@@ -1788,8 +1812,11 @@
   }
   .webinar-image,
   .news-image {
-    width: 364px;
+    width: 100%;
     height: 300px;
+  }
+  .news-content, .webinar-content{
+    width: 90%;
   }
   .carousel-dot {
     width: 8px;
@@ -1814,17 +1841,15 @@
   }
 
   .testimonials-container {
-    width: 100%;
-    max-width: 387px;
+    width: 90%;
     margin: 0 auto;
-    position: relative;
   }
-
+  .testimonial-content{
+    width: 90%;
+    gap: 24px;
+  }
   .testimonial-card {
-    display: none;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+    width: 90%;
   }
 
   .author-info {
@@ -1839,9 +1864,6 @@
     border-radius: 50%;
   }
 
-  .testimonial-card.active {
-    display: block;
-  }
 
   .carousel-controls {
     display: flex;
@@ -1865,25 +1887,14 @@
   }
 
   .testimonials-container {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  .testimonial-content {
-    width: 100%;
-    padding: 24px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+    width: 90%;
   }
 
   .author-info {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-top: 20px;
   }
 
   .author-image {
@@ -1892,9 +1903,6 @@
     border-radius: 50%;
   }
 
-  .testimonial-card.active {
-    display: block;
-  }
 
   .carousel-controls {
     display: flex;
@@ -1919,36 +1927,31 @@
 
   /*-------------------- Sección Contact form-------------------- */
   .contact-section {
-    display: none;
     width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
     height: 700px;
     margin: 0 auto;
     gap: 0;
   }
 
   .contact-form {
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: auto;
+    width: 90%;
   }
 
   .form-container {
-    width: 100%;
+    width: 90%;
     padding: 30px 20px;
     height: auto;
   }
 
   .form-group {
-    width: 100%;
+    width: 90%;
   }
-
+  .form-group label{
+    padding: 0;
+    width: 90%;
+  }
   .form-group textarea {
-    min-width: 300px;
+    min-width: 200px;
     width: 100%;
     min-height: 100px;
     height: 50px;
