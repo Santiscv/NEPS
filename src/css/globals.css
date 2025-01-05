@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
   justify-content: center;
   gap: 8px;
   color: var(--Tertiary_2, #E9EAEC);
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono"; 
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; 
@@ -23,7 +24,7 @@ body {
 
 /* Capa 1 - Fondo más profundo */
 .parallax-container {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
