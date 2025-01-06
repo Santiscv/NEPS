@@ -1698,7 +1698,7 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 90%;
+    width: 100%;
   }
 
   .how-work {
@@ -1734,13 +1734,13 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 90%;
+    width: 100%;
   }
   .manager-features{
     width: 90%;
   }
   .manager-content {
-    width: 90%;
+    width: 100%;
     height: auto;
     align-items: center;
   }
@@ -1783,6 +1783,7 @@
     color: white;
     text-align: center;
     width: 100%;
+    font-size: 40px;
   }
   /*-------------- novedades y webinar------------------- */
   .webinar-card, .news-card{
@@ -1850,8 +1851,11 @@
   }
   .testimonial-card {
     width: 90%;
+    flex: none ;
   }
-
+  .testimonials-subtitle{
+    width: 90%;
+  }
   .author-info {
     display: flex;
     align-items: center;
@@ -1964,7 +1968,8 @@
     width: 100%;
     /* padding: 44px 20px; */
     align-items: center;
-    height: auto;
+    height: 1024px;
+    justify-content: normal;
   }
 
   .footer-content {
@@ -2032,5 +2037,6 @@
   .footer-services-title {
     text-align: center;
     width: 100%;
+    font-size: 24px;
   }
 }
