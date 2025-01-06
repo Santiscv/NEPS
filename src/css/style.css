@@ -173,14 +173,84 @@
 .content h2{
   margin-top: 48px;
 }
+.mapa-neps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 530px;
+  height: auto; /* Se ajustará según el contenido */
+}
+
+.mapa-img {
+  width: 100%; /* Ajusta el tamaño del mapa */
+  height: auto;
+}
+
+.mapa-neps img.iconos {
+  position: absolute;
+  animation: pulse 2s infinite;
+}
+
+/* Posiciona cada icono */
+.icono-1 {
+  top: 0%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* Tamaño de los iconos */
+}
+
+.icono-2 {
+  top: 18%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+}
+
+.icono-3 {
+  top: 36%;
+  left: 35%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.icono-4 {
+  top: 55%;
+  left: 44%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.icono-5 {
+  top: 65%;
+  left: 53%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.5;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
 .stats h2 {
   margin-bottom: 48px;
 }
 
 .map {
-  width: 100%;
-  max-width: 540px;
-  height: auto;
+ display: none;
 }
 
 /* ------------------------Services section ------------------------ */
@@ -1263,8 +1333,11 @@
     width: 100%;
     justify-content: center;
   }
-
+  .mapa-neps{
+    display: none;
+  }
   .map {
+    display: flex;
     align-self: center;
     margin: 0 auto;
     width: 325.162px;
