@@ -509,7 +509,7 @@
 .manager-title {
   /* H4 - 30 Open_Semibold */
   font-family: "Open Sans";
-  font-size: 30px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -523,7 +523,7 @@
 .work-subtitle {
   color: var(--variable-collection-white);
   font-family: "Open Sans";
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 24px;
