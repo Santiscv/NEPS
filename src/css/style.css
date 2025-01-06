@@ -507,7 +507,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.how-work h4{
+  text-align: left;
+}
 
 .work-subtitle {
   color: var(--variable-collection-white);
@@ -1565,6 +1567,7 @@
     width: 95%;
     font-size: 30px;
   }
+
   .how-work {
     width: 100%;
     height: auto;
