@@ -1702,7 +1702,7 @@
   }
 
   .how-work {
-    width: 90%;
+    width: 100%;
     height: auto;
     align-items: center;
     gap: 24px;
@@ -1782,8 +1782,7 @@
   .section-title {
     color: white;
     text-align: center;
-    width: 100%;
-    font-size: 40px;
+    width: 90%;
   }
   /*-------------- novedades y webinar------------------- */
   .webinar-card, .news-card{
