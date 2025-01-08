@@ -707,7 +707,7 @@
 /* ------------------------Testimonials Section ------------------------ */
 .testimonials {
   display: flex;
-  width: 1140px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -770,8 +770,9 @@
 .author-info {
   display: flex;
   width: 300px;
+  margin-top: 10px;
   align-items: center;
-  align-content: center;
+  justify-content: flex-start;
   gap: 20px 16px;
   flex-wrap: wrap;
 }
@@ -786,8 +787,7 @@
 .testimonial-author {
   display: flex;
   width: 300px;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
   gap: 20px 16px;
   flex-wrap: wrap;
 }
@@ -805,10 +805,8 @@
 .author-company {
   color: rgba(255, 255, 255, 0.6);
   display: flex;
-  width: 277px;
+  width: 300px;
   height: 26px;
-  align-items: flex-start;
-  align-content: flex-start;
   gap: 8px;
   flex-wrap: wrap;
 }
@@ -849,19 +847,19 @@
 .webinar-content {
   display: flex;
   width: 364px;
-  padding: 8px;
+  padding: 24px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
 }
-.news-date,
-.webinar-date {
+.news-date-container,
+.webinar-date-container{
   display: flex;
-  width: 348px;
-  align-items: center;
-  gap: 16px;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
 }
-
 .news-link,
 .webinar-link {
   display: flex;
@@ -971,12 +969,9 @@
 
 .social-links {
   display: flex;
-  width: 50.899px;
-  height: 77.899px;
   padding: 12.725px;
-  align-items: flex-start;
+  justify-content: flex-end;
   gap: 12.725px;
-  margin-left: 70px;
 }
 
 .team-quote {
@@ -1217,7 +1212,7 @@
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 360px) and (max-width: 768px) {
   /* Navbar----------------------- */
   h2{
     width: 95%;
@@ -1355,10 +1350,8 @@
   }
   .service-header {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
     gap: 12px;
-    padding: 0 16px;
   }
   .service-icon {
     width: 32px;
@@ -1722,10 +1715,6 @@
     width: 90%;
     margin: 0 auto;
   }
-
-  .news-date, .webinar-date{
-    width: 90%;
-  }
   .news-section, .webinars-section{
     width: 100%;
   }
@@ -1897,6 +1886,7 @@
 
   /* ------------------------Footer section-------------------------*/
   .footer-container {
+    grid-area: footer;
     width: 100%;
     /* padding: 44px 20px; */
     align-items: center;
@@ -1967,5 +1957,60 @@
     text-align: center;
     width: 100%;
     font-size: 24px;
+  }
+}
+@media (min-width: 576px) and (max-width:768px){
+  h2{
+    width: 95%;
+    font-size: 34px;
+  }
+  .services h2{
+    width: 95%;
+  }
+  .main-header {
+    max-width: none;
+    width: 90%;
+  }
+  .content{
+    width: 100%;
+  }
+  .mapa-neps{
+    display: none;
+  }
+  .map {
+    display: flex;
+    width: 405.162px;
+    height: 400.698px;
+  }
+
+  .service-card h3{
+    font-size: 24px;
+  }
+  .about-container-father{
+    gap: 80px;
+  }
+  .principles-image{
+    margin-top: 20px;
+    width: 90%;
+  }
+  .service-card .btn-secondary{
+    align-self: center;
+  }
+  .service-icon {
+    width: 52px;
+    height: 52px;
+  }
+  .author-info{
+    width: 90%;
+
+  }
+  .testimonial-text{
+    width: 90%;
+  }
+  .testimonial-content{
+    width: 100%;
+  }
+  .testimonial-card{
+    flex: none;
   }
 }

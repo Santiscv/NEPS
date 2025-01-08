@@ -58,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Autoplay
         let autoplayInterval = setInterval(() => {
-            if (window.innerWidth <= 480 && document.hasFocus()) {
+            if (window.innerWidth <= 768 && document.hasFocus()) {
                 showCard(currentIndex + 1);
-            }
+            }   
         }, 5000);
 
         // Mostrar primera card
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
         carousels = [];
 
         // Inicializar nuevos carousels si estamos en móvil
-        if (window.innerWidth <= 480) {
+        if (window.innerWidth <= 768) {
             carouselsConfig.forEach(config => {
                 carousels.push(createCarousel(config));
             });
