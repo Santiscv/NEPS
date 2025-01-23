@@ -1,0 +1,94 @@
+.about-title-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 600px; /* Altura fija para mantener la proporción */
+    margin-bottom: 48px;
+    overflow: hidden; /* Esto asegura que los íconos no se salgan del círculo */
+}
+
+.principles-image-desktop img{
+    width: 500px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.comunicacion-afectiva,
+.colaboracion,
+.personas-motivadas,
+.adaptabilidad {
+    position: absolute;
+    width: 150px; /* Tamaño de los íconos */
+    height: 150px;
+    z-index: 2;
+    animation: circular-motion 10s linear infinite;
+}
+.icono-1,
+.icono-2,
+.icono-3{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+.icono-1{
+    right: 30%;
+    bottom: 16%;
+    width: 100px;
+    height: 100px;  
+}
+.icono-2{
+    left: 30%;
+    bottom: 16%;
+    width: 100px;
+    height: 100px;  
+}
+.icono-3{
+    right: 48%;
+    top: 11%;
+    width: 100px;
+    height: 100px;  
+}
+/* Posiciones iniciales */
+.comunicacion-afectiva {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(0, -150px);
+    animation-delay: 0s;
+}
+
+.colaboracion {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(150px, 0);
+    animation-delay: 1.5s;
+}
+
+.personas-motivadas {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(0, 150px);
+    animation-delay: 3s;
+}
+
+.adaptabilidad {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(-150px, 0);
+    animation-delay: 4.5s;
+}
+
+/* Animación circular */
+@keyframes circular-motion {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(150px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title><neps /> | Desarrollo de sistemas</title>
+    <link rel="icon" href="/src/img/favicon-neps.svg" type="neps-icon">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet"/>
@@ -17,13 +18,22 @@
     <div class="parallax-container"></div>
     <header class="main-header">
       <div class="header-content">
-        <img class="logo-mobile" src="img/Navbar/neps-mobile.svg" alt="NEPS Logo"/>
         <img class="logo" src="img/neps-logo-navbar.svg" alt="NEPS Logo" />
+        <img class="logo-mobile" src="img/Navbar/neps-mobile.svg" alt="NEPS Logo"/>
         <button class="menu-toggle">
-          <img src="img/Navbar/menu-mobile.svg" alt="Menu Mobile" />
+          <img src="img/Navbar/menu-mobile.svg" alt="Icono de menú" />
         </button>
       </div>
-      <!-- Menú móvil como overlay -->
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-item"><a href="index.html">INICIO</a></li>
+          <li class="nav-item"><a href="#servicios">SERVICIOS</a></li>
+          <li class="nav-item"><a href="nosotros.html">NOSOTROS</a></li>
+          <li class="nav-item"><a href="novedades.html">NOVEDADES</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Mobile menu as overlay -->
       <div class="mobile-menu">
         <div class="mobile-menu-header">
           <img class="logo-mobile" src="img/Navbar/neps-mobile.svg" alt="NEPS Logo"/>
@@ -33,22 +43,13 @@
         </div>
         <nav class="mobile-nav">
           <ul>
-            <li class="nav-item"><a href="#inicio">INICIO</a></li>
+            <li class="nav-item"><a href="index.html">INICIO</a></li>
             <li class="nav-item"><a href="#servicios">SERVICIOS</a></li>
-            <li class="nav-item"><a href="#nosotros">NOSOTROS</a></li>
-            <li class="nav-item"><a href="#novedades">NOVEDADES</a></li>
+            <li class="nav-item"><a href="nosotros.html">NOSOTROS</a></li>
+            <li class="nav-item"><a href="novedades.html">NOVEDADES</a></li>
           </ul>
         </nav>
       </div>
-      <!-- Navegación desktop -->
-      <nav class="main-nav">
-        <ul>
-          <li class="nav-item"><a href="#inicio">INICIO</a></li>
-          <li class="nav-item"><a href="#servicios">SERVICIOS</a></li>
-          <li class="nav-item"><a href="#nosotros">NOSOTROS</a></li>
-          <li class="nav-item"><a href="#novedades">NOVEDADES</a></li>
-        </ul>
-      </nav>
       <a href="#contacto" class="btn-primary">Contacto</a>
     </header>
 
@@ -176,7 +177,12 @@
         <div class="about-container-father">
           <h2>NOSOTROS</h2>
           <div class="about-title-image-container">
-            <img class="principles-image" src="img/Nosotros-Section/nosotros-global.svg" alt="Principios de NEPS" />
+            <img class="principles-image" src="img/Nosotros-Section/Nosotros-global/nosotros-global.svg" alt="Principios de NEPS" />
+            <img class="principles-image-desktop" src="img/Nosotros-Section/Nosotros-global/Nosotros-desktop.svg" alt="Principios de NEPS" />
+            <img class="comunicacion-afectiva" src="img/Nosotros-Section/Nosotros-global/comunicacion-afectiva.svg" alt="comunicacion afectiva" />
+            <img class="colaboracion" src="img/Nosotros-Section/Nosotros-global/colaboracion.svg" alt="colaboracion" />
+            <img class="personas-motivadas" src="img/Nosotros-Section/Nosotros-global/personas-motivadas.svg" alt="personas motivadas" />
+            <img class="adaptabilidad" src="img/Nosotros-Section/Nosotros-global/adaptabilidad.svg" alt="adaptabilidad" />
           </div>
 
           <div class="team-container">
@@ -201,7 +207,7 @@
               <div class="team-info">
                 <h5 class="team-name">Federico Piedrasanta</h5>
                 <div class="social-links">
-                  <a href="https://www.linkedin.com/in/federico-piedrasanta/" target="_blank"><img class="social-icon" src="img/Nosotros-Section/linkedin.svg" alt="linkedin-icon" /></a>
+                  <a href="https://www.linkedin.com/in/federico-piedrasanta/"><img class="social-icon" src="img/Nosotros-Section/linkedin.svg" alt="linkedin-icon" /></a>
                 </div>
                 <p class="team-role">COO | Software engineer | Co-founder</p>
                 <blockquote class="team-quote">“En Neps, no solo desarrollamos software; creamos soluciones estratégicas que impulsan el crecimiento de nuestros clientes. Nuestro compromiso es acompañarlos desde el primer paso hasta el éxito continuo”.</blockquote>
@@ -211,8 +217,9 @@
           </div>
         </div>
       </section>
+
+
       <section class="work-method">
-        <div class="work-content">
           <figure class="work-illustration">
             <img class="work-illustration" src="img/Trabajamos-Diferencias/imagen_como_trabajamos.svg" alt="Ilustración de código" />
           </figure>
@@ -220,14 +227,12 @@
             <h2>¿CÓMO TRABAJAMOS?</h2>
             <h4>No se trata del software, se trata de CÓMO hacemos el software.</h4>
             <p class="work-description">En NEPS, no aplicamos agilismo, somos agilismo desde nuestros comienzos. Creemos que la mejor forma de desarrollar software de calidad es trabajar de forma flexible y distribuida, con equipos de profesionales autónomos y motivados.</p>
+            <a href="nosotros.html" class="btn-primary">Nuestra estructura</a>
           </div>
-        </div>
-        <button class="btn-primary">Nuestra estructura</button>
       </section>
 
       <section class="rol-section">
         <section class="difference-section">
-          <div class="difference-container">
             <div class="manager-content">
               <h2>¿QUÉ NOS DIFERENCIA?</h2>
               <h4>El rol del TEAM MANAGER</h4>
@@ -238,12 +243,11 @@
                 <li><strong class="strong-difference">Ayuda</strong> al equipo a adaptarse a la cultura y metodología de desarrollo del cliente.</li>
                 <li><strong class="strong-difference">Organiza</strong> el equipo en la metodología ágil necesaria, lo que facilita el trabajo colaborativo y la entrega de resultados.</li>
               </ul>
+              <a href="#contacto" class="btn-primary">Pactar Reunion</a>
             </div>
             <figure class="difference-illustration">
               <img class="difference-illustration" src="img/Trabajamos-Diferencias/Diferencias.svg" alt="Ilustración de diferencias" />
             </figure>
-          </div>
-          <a href="#contacto" class="btn-primary">Pactar Reunion</a>
         </section>
 
         <section class="clients-section">
@@ -321,7 +325,7 @@
                   <p class="webinar-date">25 Diciembre, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="news-link">Leer más</a>
+                <a href="novedades-single.html" class="news-link">Leer más</a>
               </div>
             </article>
 
@@ -333,7 +337,7 @@
                   <p class="webinar-date">18 Diciembre, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="news-link">Leer más</a>
+                <a href="novedades-single.html" class="news-link">Leer más</a>
               </div>
             </article>
 
@@ -345,7 +349,7 @@
                   <p class="webinar-date">11 Diciembre, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="news-link">Leer más</a>
+                <a href="novedades-single.html" class="news-link">Leer más</a>
               </div>
             </article>
           </div>
@@ -354,7 +358,7 @@
             <div class="carousel-dot" data-slide="1"></div>
             <div class="carousel-dot" data-slide="2"></div>
           </div>
-          <a href="#" class="btn-secondary">Ver más</a>
+          <a href="novedades.html" class="btn-secondary">Ver más</a>
         </section>
 
         <section class="webinars-section">
@@ -368,7 +372,7 @@
                   <p class="webinar-date">8 Julio, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="webinar-link">Ver más</a>
+                <a href="novedades-single.html" class="webinar-link">Ver más</a>
               </div>
             </article>
 
@@ -380,7 +384,7 @@
                   <p class="webinar-date">22 Noviembre, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="webinar-link">Ver más</a>
+                <a href="novedades-single.html" class="webinar-link">Ver más</a>
               </div>
             </article>
 
@@ -392,7 +396,7 @@
                   <p class="webinar-date">1 Septiembre, 2024</p>
                 </div>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing</h3>
-                <a href="#" class="webinar-link">Ver más</a>
+                <a href="novedades-single.html" class="webinar-link">Ver más</a>
               </div>
             </article>
           </div>
@@ -401,7 +405,7 @@
             <div class="carousel-dot" data-slide="1"></div>
             <div class="carousel-dot" data-slide="2"></div>
           </div>
-          <a href="#" class="btn-secondary">Ver más</a>
+          <a href="novedades.html" class="btn-secondary">Ver más</a>
         </section>
       </section>
       </section>
@@ -436,12 +440,12 @@
             </div>
             <div class="footer-social-media">
               <a href="#"><img src="img/Footer/mdi_linkedin.svg" alt="LinkedIn" /></a>
-              <a href="#"><img src="img/Footer/mdi_twitter.svg" alt="Twitter" /></a>
+              <a href="#"><img src="img/Footer/instagram.svg" alt="Twitter" /></a>
               <a href="#"><img src="img/Footer/Facebook.svg" alt="Facebook" /></a>
             </div>
+            <div class="linear"></div>
+            <p class="copyright"> Copyright® 2020 Todos los derechos Reservados - Desarrollado por <a class="footer-link" href="https://www.neps.com.ar/">NEPS</a> </p>
           </div>
-          <div class="linear"></div>
-          <p class="copyright"> Copyright® 2020 Todos los derechos Reservados - Desarrollado por <a class="footer-link" href="https://www.neps.com.ar/">NEPS</a> </p>
         </div>
         <div class="footer-services">
           <div class="footer-menu">
@@ -470,8 +474,9 @@
       </div>
     </footer>
   </body>
-  <script src="carousel.js"></script>
-  <script src="menu.js"></script>
-  <script src="counter.js"></script>
-  <script src="scroll.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/counter.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/imagenes.js"></script>
 </html>

@@ -105,10 +105,34 @@ document.addEventListener('DOMContentLoaded', function() {
         carousels.forEach(carousel => carousel.destroy());
         carousels = [];
 
-        // Inicializar nuevos carousels si estamos en móvil
-        if (window.innerWidth <= 768) {
+        // Inicializar nuevos carousels para pantallas móviles
+        if (window.innerWidth <= 768) { // Aseguramos que sea hasta 768px
             carouselsConfig.forEach(config => {
+                const container = document.querySelector(config.container);
+                const cards = container.querySelectorAll(config.cards);
+                
+                // Aseguramos que todas las tarjetas tengan el estilo correcto
+                cards.forEach((card, index) => {
+                    if (index === 0) {
+                        card.style.display = 'flex';
+                        card.classList.add('active');
+                    } else {
+                        card.style.display = 'none';
+                        card.classList.remove('active');
+                    }
+                });
+                
                 carousels.push(createCarousel(config));
+            });
+        } else {
+            // Para pantallas más grandes, mostrar todas las tarjetas
+            carouselsConfig.forEach(config => {
+                const container = document.querySelector(config.container);
+                const cards = container.querySelectorAll(config.cards);
+                cards.forEach(card => {
+                    card.style.display = 'flex';
+                    card.classList.remove('active');
+                });
             });
         }
     }
