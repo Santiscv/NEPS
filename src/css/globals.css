@@ -91,62 +91,7 @@ h3{
   font-weight: 700;
   line-height: 30px; 
 }
-/* Animaciones para enlaces (excluyendo footer) */
-/* Animaciones para enlaces (excluyendo footer y navbar) */
-a:not(.footer-menu-list-services):not(.footer-link):not(.nav-item a) {
-  position: relative;
-  transition: all 0.3s ease;
-}
 
-/* Efecto de brillo al hover */
-a:not(.footer-menu-list-services):not(.footer-link):not(.nav-item a)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.6),
-      transparent
-  );
-  z-index: 1;
-  pointer-events: none;
-  opacity: 0;
-}
-
-/* Animación al hover */
-a:not(.footer-menu-list-services):not(.footer-link):not(.nav-item a):hover {
-  transform: translateY(-2px);
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-a:not(.footer-menu-list-services):not(.footer-link):not(.nav-item a):hover::after {
-  animation: shineEffectContained 1.2s ease-in-out infinite;
-}
-
-/* Keyframes para el efecto de brillo contenido */
-@keyframes shineEffectContained {
-  0% {
-      left: -5%;
-      opacity: 0;
-  }
-  20% {
-      opacity: 0.8;
-  }
-  100% {
-      left: 50%;
-      opacity: 0;
-  }
-}
-
-a:not(.footer-menu-list-services):not(.footer-link):active {
-  transform: scale(0.95);
-  transition: transform 0.1s ease;
-} */
 
 /* Animaciones para imágenes en scroll */
  .fade-in {
