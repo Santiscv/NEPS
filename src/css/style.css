@@ -689,31 +689,29 @@
 
 /* ------------------------Testimonials Section ------------------------ */
 .testimonials {
+  padding: 4rem 2rem;
   width: 100%;
-  gap: 48px;
 }
 
 .testimonials-header {
-  gap: 48px;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.testimonials-header h4 {
-  background: linear-gradient(307deg, #6b90df 7.41%, #e06c75 77.36%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .testimonials-container {
-  flex-direction: row;
-  width: 85%;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  place-items: center;
+  width: 90%;
 }
 
 .testimonial-card {
   background-color: rgba(255, 255, 255, 0.05);
   height: 423px;
-  width: 90%;
+  width: 100%;
   gap: 10px;
+  padding: 2rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -727,12 +725,23 @@
   gap: 20px 16px;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
 }
+
 .testimonial-text {
   width: 300px;
   height: 252px;
   font-size: 16px;
   justify-content: flex-start;
+}
+.author-name {
+  width: 199px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
 .author-info {
   display: flex;
@@ -743,36 +752,13 @@
   justify-content: flex-start;
   gap: 20px;
 }
+
 .author-image {
   width: 52px;
   height: 52px;
   border-radius: 50%;
   padding: 2px;
   background: linear-gradient(to right, #e06c75, #6b90df);
-}
-
-.testimonial-author {
-  width: 300px;
-  gap: 20px 16px;
-  flex-wrap: wrap;
-}
-
-.author-name {
-  width: 199px;
-  color: #fff;
-  font-family: "Open Sans";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-.author-company {
-  color: rgba(255, 255, 255, 0.6);
-  width: 300px;
-  height: 26px;
-  font-size: 16px;
-  gap: 8px;
 }
 /* ------------------------Nosotros-Page ----------------------------- */
 .services-grid {
@@ -2046,7 +2032,7 @@
    .news-container,
    .webinars-container,
    .testimonial-content {
-       width: 90%;
+       width: 100%;
    }
 
    .webinar-content, 
@@ -2073,34 +2059,26 @@
        width: 100%;
    }
    .testimonials-container {
-    flex-direction: row;
-    align-items: stretch;
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
-  .testimonials-header h4{
-    width: 100%;
+  .testimonial-card {
+    width: 90%;
   }
+
   .testimonial-text {
     width: 100%;
     height: 200px;
     font-size: 14px;
     overflow-y: auto;
   }
-   /* Estilos compartidos para todas las cards */
-   
    .webinar-card,
    .news-card {
        width: 100%;
        display: flex;
    }
-   .testimonial-card{
-    width: 90%;
-   }
+
    /* Controles del carousel */
    .carousel-controls {
        display: flex;
@@ -2552,36 +2530,29 @@
 
   }
   .testimonials-container {
-    flex-direction: row;
-    align-items: stretch;
     width: 100%;
-    flex-wrap: wrap;
     gap: 16px;
-    align-items: center;
-    justify-content: center;
-  }
-  .testimonial-card {
-    flex-direction: row;
-    width: 30%;
-    height: 350px;
-    padding: 20px;
-    gap: 8px;
   }
 
   .testimonial-content {
-      width: 100%;
-      padding: 0;
-      gap: 12px;
+    width: 100%;
   }
-  .novedad-webinar-author .team-quote{
-    width: 90%;
+
+  .testimonial-card {
+    width: 100%;
   }
+
   .testimonial-text {
     width: 100%;
     height: 200px;
-    font-size: 14px;
+    font-size: 15px;
     overflow-y: auto;
   }
+
+  .novedad-webinar-author .team-quote{
+    width: 90%;
+  }
+
   
   .author-info {
     width: 100%;
@@ -2864,17 +2835,18 @@
 
   }
 
-  .testimonials-container{
-    gap: 16px;
-    width: 90%;
+  .testimonials-container {
+    width: 95%;
   }
-  .testimonial-content{
+
+  .testimonial-content {
     width: 100%;
   }
+
   .testimonial-card {
-    width: calc(33.33% - 16px); /* Tres tarjetas por fila con gap */
-    padding: 24px;
+    width: 100%;
   }
+
   .testimonial-text {
     width: 100%;
     height: 200px;
@@ -2884,12 +2856,6 @@
 
   .author-company {
     width: 90%;
-  }
-  .testimonial-text {
-    width: 100%;
-    height: 200px;
-    font-size: 15px;
-    overflow-y: auto;
   }
   .webinars-container, 
   .news-container{
