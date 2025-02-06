@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="parallax-container"></div>
-    <header class="main-header">
+    <header class="main-header flex">
       <div class="header-content">
         <img class="logo" src="img/neps-logo-navbar.svg" alt="NEPS Logo" />
         <img class="logo-mobile" src="img/Navbar/neps-mobile.svg" alt="NEPS Logo"/>
@@ -25,7 +25,7 @@
         </button>
       </div>
       <nav class="main-nav">
-        <ul>
+        <ul class="flex">
           <li class="nav-item"><a href="index.html" class="page-active">INICIO</a></li>
           <li class="nav-item"><a href="#servicios">SERVICIOS</a></li>
           <li class="nav-item"><a href="nosotros.html">NOSOTROS</a></li>
@@ -53,11 +53,11 @@
       <a href="#contacto" class="btn-primary">Contacto</a>
     </header>
 
-    <main class="main-container">
-      <section class="content">
+    <main class="main-container flex">
+      <section class="content flex">
         <h2 id="inicio">¿DÓNDE ESTAMOS?</h2>
         <img class="map" src="img/Mapa-global/mapa-section-desktop.svg" alt="Mapa de ubicación"/>
-        <div class="mapa-neps">
+        <div class="mapa-neps flex">
           <img class="mapa-img" src="img/Mapa-global/Mapa.svg" alt="">
           <img class="iconos icono-1" src="img/Mapa-global/icono-mapa.svg" alt="icono-mapa">
           <img class="iconos icono-2" src="img/Mapa-global/icono-mapa.svg" alt="icono-mapa">
@@ -67,20 +67,20 @@
         </div>
       </section>
       
-      <section id="servicios" class="services">
+      <section id="servicios" class="services flex">
         <h2>NUESTROS SERVICIOS</h2>
         <div class="services-container flex">
           <div class="our-services-container-1 flex">
-            <article class="service-card">
-              <div class="service-header">
+            <article class="service-card flex">
+              <div class="service-header flex">
                 <img class="service-icon" src="img/Nuestros-Servicios/code-monitor-2 1.svg" alt="Servicio" />
                 <h3>Desarrollo a medida</h3>
               </div>
               <p class="service-description"> Desarrollamos software a medida para satisfacer las necesidades específicas de nuestros clientes. Lo hacemos bajo la licencia GPLv3, lo que te otorga la plena propiedad del sistema.</p>
               <a href="#contacto" class="btn-secondary">Quiero saber más</a>
             </article>
-            <article class="service-card">
-              <div class="service-header">
+            <article class="service-card flex">
+              <div class="service-header flex">
                 <img class="service-icon" src="img/Nuestros-Servicios/user-switch-account-2 1.svg" alt="Servicio" />
                 <h3>Agile Staff</h3>
               </div>
@@ -89,16 +89,16 @@
             </article>
           </div>
           <div class="our-services-container-2 flex">
-            <article class="service-card">
-              <div class="service-header">
+            <article class="service-card flex">
+              <div class="service-header flex">
                 <img class="service-icon" src="img/Nuestros-Servicios/chat-two-bubbles.svg" alt="Servicio" />
                 <h3>Consultoría</h3>
               </div>
               <p class="service-description">Ofrecemos servicios de consultoría personalizados, desde la definición de arquitecturas de software hasta la capacitación en buenas prácticas de programación.</p>
               <a href="#contacto" class="btn-secondary">Quiero saber más</a>
             </article>
-            <article class="service-card">
-              <div class="service-header">
+            <article class="service-card flex">
+              <div class="service-header flex">
                 <img class="service-icon" src="img/Nuestros-Servicios/configuracion.svg" alt="Servicio" />
                 <h3>Departamento de Sistemas</h3>
               </div>
@@ -109,36 +109,36 @@
         </div>
       </section>
 
-      <section class="stats">
+      <section class="stats flex">
         <h2>ESTADÍSTICAS</h2>
-        <div class="stats-container">
-          <div class="stats-container-content">
+        <div class="stats-container flex">
+          <div class="stats-container-content flex">
             <div class="content-stats">
-              <article class="stat-item">
+              <article class="stat-item flex">
                 <img class="stat-icon" src="img/Estadisticas/mapa2.svg" alt="Países" />
-                <div class="stat-content">
+                <div class="stat-content flex">
                   <span class="stat-number" data-target="5">0</span>
                   <span class="stat-label">Países</span>
                 </div>
               </article>
-              <article class="stat-item">
+              <article class="stat-item flex">
                 <img class="stat-icon" src="img/Estadisticas/smile2.svg" alt="Clientes" />
-                <div class="stat-content">
+                <div class="stat-content flex">
                   <span class="stat-number" data-target="48">0</span>
                   <span class="stat-label">Clientes Felices</span>
                 </div>
               </article>
 
-              <article class="stat-item">
+              <article class="stat-item flex">
                 <img class="stat-icon" src="img/Estadisticas/clock2.svg" alt="Capacidad" />
-                <div class="stat-content">
+                <div class="stat-content flex">
                   <span class="stat-number" data-target="7200">0</span>
                   <span class="stat-label">Capacidad en horas</span>
                 </div>
               </article>
-              <article class="stat-item">
+              <article class="stat-item flex">
                 <img class="stat-icon" src="img/Estadisticas/star2.svg" alt="Trayectoria" />
-                <div class="stat-content">
+                <div class="stat-content flex">
                   <span class="stat-number" data-target="11">0</span>
                   <span class="stat-label">Trayectoria</span>
                 </div>
@@ -148,8 +148,8 @@
         </div>
       </section>
 
-      <section class="agile-section">
-        <article class="agile-content">
+      <section class="agile-section flex">
+        <article class="agile-content flex">
           <img class="service-icon-agile" src="img/Nuestros-Servicios/iteracion.svg" alt="Desarrollo" />
           <h2 class="agile-title">100 % ÁGILES</h2>
           <p class="agile-description">En NEPS, la agilidad no es simplemente un método de desarrollo, es la esencia misma de nuestra organización. Durante la última década, hemos abrazado la filosofía ágil en su máxima expresión, transformando no solo la forma en que creamos software, sino también la manera en que concebimos el trabajo.</p>
@@ -264,17 +264,17 @@
           </div>
         </section>
 
-        <section class="testimonials">
-          <div class="testimonials-header">
+        <section class="testimonials flex">
+          <div class="testimonials-header flex">
             <h2>TESTIMONIOS</h2>
             <h4>¿Qué opinan nuestros clientes?</h4>
           </div>
           <div class="testimonials-container">
             <!-- Primer testimonio -->
-            <article class="testimonial-card active">
-              <div class="testimonial-content">
-                <p class="testimonial-text">"NEPS es una empresa en la que se puede confiar plenamente, sea en calidad humana como profesional... La seriedad y compromiso que asumieron cada uno de ellos en nuestro emprendimiento, es algo que no he visto en mis 31 años de trabajo relacionado directa e indirectamente con desarrolladores de software."</p>
-                <div class="author-info">
+            <article class="testimonial-card active flex">
+              <div class="testimonial-content flex">
+                <p class="testimonial-text flex">"NEPS es una empresa en la que se puede confiar plenamente, sea en calidad humana como profesional... La seriedad y compromiso que asumieron cada uno de ellos en nuestro emprendimiento, es algo que no he visto en mis 31 años de trabajo relacionado directa e indirectamente con desarrolladores de software."</p>
+                <div class="author-info flex">
                   <img class="author-image" src="img/Testimonios/osvaldo.svg" alt="Foto de cliente"/>
                   <cite class="author-name">Osvaldo A. Nostrala</cite>
                 </div>
@@ -285,10 +285,10 @@
             
 
             <!-- Segundo testimonio -->
-            <article class="testimonial-card">
-              <div class="testimonial-content">
-                <p class="testimonial-text">"Los perfiles reflejan una combinación excepcional de experiencia, formación y compromiso, lo que garantiza un servicio de excelencia en cada proyecto."</p>
-                <div class="author-info">
+            <article class="testimonial-card flex">
+              <div class="testimonial-content flex">
+                <p class="testimonial-text flex">"Los perfiles reflejan una combinación excepcional de experiencia, formación y compromiso, lo que garantiza un servicio de excelencia en cada proyecto."</p>
+                <div class="author-info flex">
                   <img class="author-image" src="img/Testimonios/nadia.svg" alt="Foto de cliente"/>
                   <cite class="author-name">Nadia Hussain</cite>
                 </div>
@@ -298,11 +298,10 @@
             
 
             <!-- Tercer testimonio -->
-            <article class="testimonial-card">
-              <div class="testimonial-content">
-                <p class="testimonial-text">"NEPS, es un aliado estratégico, que nos brinda la posibilidad de contar con profesionales de tecnología de información con amplia experiencia, y en corto tiempo cubrir nuestras necesidades para los diferentes equipos de trabajo."</p>
-                </p>
-                <div class="author-info">
+            <article class="testimonial-card flex">
+              <div class="testimonial-content flex">
+                <p class="testimonial-text flex">"NEPS, es un aliado estratégico, que nos brinda la posibilidad de contar con profesionales de tecnología de información con amplia experiencia, y en corto tiempo cubrir nuestras necesidades para los diferentes equipos de trabajo."</p>
+                <div class="author-info flex">
                   <img class="author-image" src="img/Testimonios/Juan.png" alt="Foto de cliente"/>
                   <cite class="author-name">Juan Díaz</cite>
                 </div>

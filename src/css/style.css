@@ -1,3 +1,9 @@
+.flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* Boton Primary */
 .btn-primary {
   margin-top: 24px;
@@ -71,10 +77,7 @@
 /* ------------------------Header styles ------------------------ */
 .main-header {
   margin-top: 40px;
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
   width: 100%;
   height: 114px;
   border-radius: 8px;
@@ -92,9 +95,7 @@
 }
 
 .main-nav ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
   gap: 48px;
   list-style: none;
 }
@@ -122,12 +123,11 @@
   line-height: var(--body-large-18-mono-line-height);
   text-decoration: none;
   position: relative;
-  transition: color 0.3s ease; /* Añadida transición para el color */
-}
+  transition: color 0.3s ease;
 
-/* Efecto hover en el texto */
-.nav-item a:hover {
-  color: var(--Tertiary_1, #AFBCDC);
+  &:hover{
+    color: var(--Tertiary_1, #AFBCDC);
+  }
 }
 
 /* Línea debajo del texto */
@@ -148,7 +148,6 @@
   width: 100%;
 }
 
-/* Para el ítem activo */
 .nav-item.active a {
   color: var(--White, #FDFDFD);
 }
@@ -168,8 +167,8 @@
 
 /* Clase activa específica */
 .nav-item a.page-active {
-  color: #E06C75; /* Color rosa */
-  font-weight: 600; /* Un poco más bold para destacar */
+  color: #E06C75; 
+  font-weight: 600;
 }
 .main-header .btn-primary{
   align-items: center;
@@ -183,20 +182,6 @@
 
 
 /* ------------------------Main content ------------------------ */
-.main-container,
-.content,
-.mapa-neps,
-.services,
-.service-card,
-.service-header,
-.stats,
-.stats-container,
-.stats-container-content,
-.stat-item,
-.stat-content,
-.content-stats,
-.agile-section,
-.agile-content,
 .remote-section,
 .remote-content,
 .about-section,
@@ -211,26 +196,13 @@
 .clients-section,
 .logos-clients,
 .logos-clients-container,
-.contact-section,
-.testimonials,
-.testimonials-header,
-.testimonials-container,
-.testimonial-card,
-.testimonial-content,
-.testimonial-text,
-.author-info
-.testimonial-author{
+.contact-section{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.flex{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .main-container {
   width: 100%;
@@ -448,6 +420,7 @@
 .content-stats {
   gap: 38px;
   flex-direction: row;
+  display: flex;
 }
 .stat-icon {
   width: 71px;
@@ -703,6 +676,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   place-items: center;
+  justify-content: center;
   width: 90%;
 }
 
@@ -744,11 +718,9 @@
   line-height: 30px;
 }
 .author-info {
-  display: flex;
   width: 300px;
   margin-top: 10px;
   flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
@@ -1296,6 +1268,7 @@
 .form-group textarea::placeholder {
   flex: 1 0 0;
   align-self: stretch;
+  background: #ff0000;
   color: rgba(44, 45, 49, 0.5);
   font-feature-settings: "liga" off, "clig" off;
   padding: 12px 16px;
@@ -1584,7 +1557,6 @@
     gap: 20px;
   }
   .service-header {
-    display: flex;
     flex-direction: row;
     gap: 12px;
   }
@@ -1671,7 +1643,6 @@
   }
 
   .stat-item {
-    display: flex;
     justify-content: flex-start;
     padding: 16px;
     background: rgba(253, 253, 253, 0.05);
@@ -1686,8 +1657,6 @@
   }
 
   .stat-content {
-    display: flex;
-    align-items: center;
     flex-direction: row;
     gap: 12px;
   }
@@ -2268,8 +2237,6 @@
 }
 
 .service-header {
-  display: flex;
-  align-items: center;
   gap: 10px;
   margin-bottom: 15px;
   width: 100%;
@@ -2336,22 +2303,14 @@
 }
 .stats-container-content {
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .content-stats {
     width: 100%;
-    display: flex;
-    flex-direction: row; /* Asegura que los items estén en fila */
-    justify-content: space-between; /* Distribuye el espacio entre los items */
-    align-items: center;
+    flex-direction: row; 
 }
 
 .stat-item {
-    display: flex;
-    flex-direction: row; /* Items en fila */
-    align-items: center;
     gap: 12px;
 }
 
@@ -2366,8 +2325,6 @@
 }
 
 .stat-content {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
 }
 
@@ -2390,7 +2347,6 @@
   .agile-section,
   .remote-section {
       flex-direction: row;
-      align-items: center;
       justify-content: space-between;
       gap: 40px;
       padding: 0 24px;
@@ -2879,15 +2835,3 @@
     width: 90%;
   }
 }  
-/* @media (min-width: 1326px){
-  .footer-media{
-    width: 30%;
-  }
-  .copyright{
-    width: 417px;
-  }
-  .footer-services{
-    width: 690px;
-    gap: 60px;
-  }
-}  */
