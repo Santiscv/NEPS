@@ -166,7 +166,7 @@
 }
 
 /* Clase activa específica */
-.nav-item a.page-active {
+.main-nav .nav-item a.page-active {
   color: #E06C75; 
   font-weight: 600;
 }
@@ -884,11 +884,10 @@
 }
 .news-container, 
 .webinars-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+  width: 85%;
 }
 .webinar-row .webinar-card .webinar-date-container{
   justify-content: space-between;
@@ -958,7 +957,7 @@
 .news-card,
 .webinar-card {
   display: flex;
-  width: 90%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -1264,11 +1263,11 @@
   gap: 8px;
   border-radius: 8px;
   border: 2px solid var(--Gradient_Button, #e06c75);
+  background: var(--Tertiary_2, #e9eaec);
 }
 .form-group textarea::placeholder {
   flex: 1 0 0;
   align-self: stretch;
-  background: #ff0000;
   color: rgba(44, 45, 49, 0.5);
   font-feature-settings: "liga" off, "clig" off;
   padding: 12px 16px;
@@ -2014,9 +2013,10 @@
    .webinar-date{
     font-size: 12px;
    }
-   .webinar-date-container, 
-   .news-date-container{
-    width: 95%;
+   .news-container,
+   .webinars-container {
+     grid-template-columns: 1fr;
+     width: 90%;
    }
    .webinars-container, .webinar-row{
       flex-direction: column;
@@ -2532,20 +2532,11 @@
       height: auto;
   }
 
-  .news-container, 
+  .news-container,
   .webinars-container {
-      flex-direction: row;
-      align-items: stretch;
-      width: 95%;
-      flex-wrap: wrap;
-      gap: 24px;
-      justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
   }
-  .news-card,
-  .webinar-card {
-      width: 30%; /* Tres tarjetas por fila con gap */
-  }
-
 
   .news-content,
   .webinar-content {
